@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    link(rel="shortcut icon" type="image/icon" href="done_icon.ico")
+    title ToDo List App
+    link(href="recourses/css/reset.min.css", rel="stylesheet")
+    link(href="recourses/css/styles.css", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet")
+body
+    header
+        input(type="text" placeholder="Ingresa alguna tarea...." id="item")
+        button#add
+            img(src="add_icon.svg", alt="")
+
+
+    .container
+       ul.todo#todo
+       //-  li
+          span There a item
+            .buttons
+                button.remove
+                    img(src="remove_icon.svg", alt="")
+                button.complete
+                    img(src="done_icon.svg", alt="")  
+       
+       ul.todo#completed
+    
+    footer
+        span ToDo List App
+        span © 2017 MarcoJ.
+    script(src="recourses/js/main.js")
+    
